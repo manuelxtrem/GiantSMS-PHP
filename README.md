@@ -23,7 +23,7 @@ To install GiantSMS PHP Library, simply:
 
 GiantSMS PHP Library works with PHP >= 5.3.
 
-This library requires a username and secret (string) from [GiantSMS.com](https://giantsms.com)
+This library requires API authentication credentials in order to function. Get your credentials from [GiantSMS.com](https://giantsms.com)
 
 ### Contribute
 
