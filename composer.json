@@ -1,0 +1,21 @@
+{
+    "name": "fingergiant/giantsms-api",
+    "description": "PHP API library for Giant SMS",
+    "type": "library",
+    "require": {
+        "php": ">=5.3.0",
+        "php-curl-class/php-curl-class": "^8.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emmanuel",
+            "email": "manuelxtrem@fingergiant.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "BulkSMS": "src/"
+        }
+    }
+}
