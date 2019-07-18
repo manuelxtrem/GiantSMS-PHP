@@ -28,18 +28,21 @@ This library requires API authentication credentials in order to function. Get y
 ### Usage
 - Send a message
     
+```PHP
     use BulkSMS\GiantSMS;
     
-    $sms = new GiantSMS('xxxxxxxxx', 'xxxxxx');
-    var_dump($sms->send('Hello there', '0XXXXXXXXX', 'Tester'));
+    $sms = new GiantSMS('xxxxxxxxx', 'xxxxxx'); // API username & secret
+    var_dump($sms->send('Hello there', '0XXXXXXXXX', 'Tester')); // message, recipient, sender
+```
 
 - Check balance
     
+```PHP
     use BulkSMS\GiantSMS;
     
-    $sms = new GiantSMS('xxxxxxxxx', 'xxxxxx');
-    echo $sms->balance());
-
+    $sms = new GiantSMS('xxxxxxxxx', 'xxxxxx'); // API username & secret
+    var_dump($sms->balance());
+```
 
 ### Contribute
 
