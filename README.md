@@ -25,6 +25,25 @@ GiantSMS PHP Library works with PHP >= 5.3.
 
 This library requires API authentication credentials in order to function. Get your credentials from [GiantSMS.com](https://giantsms.com)
 
+### Usage
+- Send a message
+    
+```PHP
+    use BulkSMS\GiantSMS;
+    
+    $sms = new GiantSMS('xxxxxxxxx', 'xxxxxx'); // API username & secret
+    var_dump($sms->send('Hello there', '0XXXXXXXXX', 'Tester')); // message, recipient, sender
+```
+
+- Check balance
+    
+```PHP
+    use BulkSMS\GiantSMS;
+    
+    $sms = new GiantSMS('xxxxxxxxx', 'xxxxxx'); // API username & secret
+    var_dump($sms->balance());
+```
+
 ### Contribute
 
 1. Check for open issues or open a new issue to start a discussion around a bug or feature.
