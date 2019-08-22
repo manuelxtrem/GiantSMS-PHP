@@ -19,10 +19,10 @@ class SMSResponse {
     function __construct($arrOrObj) {
         if(is_array($arrOrObj)) {
             $this->status = isset($arrOrObj['status']) ? filter_var($arrOrObj['status'], FILTER_VALIDATE_BOOLEAN) : false;
-            $this->message = isset($arrOrObj['message']) ? $arrOrObj['message'] : 'A fatal error occurre';
+            $this->message = isset($arrOrObj['message']) ? $arrOrObj['message'] : 'A fatal error occurred';
         } else {
             $this->status = isset($arrOrObj->status) ? filter_var($arrOrObj->status, FILTER_VALIDATE_BOOLEAN) : false;
-            $this->message = isset($arrOrObj->message) ? $arrOrObj->message : 'A fatal error occurre';
+            $this->message = isset($arrOrObj->message) ? $arrOrObj->message : 'A fatal error occurred';
         }
     }
 }
