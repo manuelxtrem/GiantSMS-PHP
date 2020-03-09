@@ -32,7 +32,7 @@ This library requires API authentication credentials in order to function. Get y
     use BulkSMS\GiantSMS;
     
     $sms = new GiantSMS('xxxxxxxxx', 'xxxxxx'); // API username & secret
-    var_dump($sms->send('Hello there', '0XXXXXXXXX', 'Tester')); // message, recipient, sender
+    var_dump($sms->send('Hello there', '+233XXXXXXXXX', 'Tester')); // message, recipient, sender
 ```
 
 - Check balance
