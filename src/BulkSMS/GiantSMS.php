@@ -69,6 +69,6 @@ class GiantSMS {
     }
     
     private function buildUrl($url) {
-        return 'https://giantsms.com/servicer/api/v1/' . $url;
+        return 'https://api.giantsms.com/api/v1/' . $url;
     }
 }
